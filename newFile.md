@@ -7,7 +7,7 @@ StickyLinks introduces an **innovative approach** to visualize and encode quanti
 
 ## 🔗 [Paper](link-to-your-paper)|[Project](https://github.com/deardeer/Node-SpikeLink)|[Live Demo](http://175.178.152.10:8890/)
 
-![image](https://github.com/maymayuo/Spiky-Links/blob/main/NewOverview.png)
+![image](https://github.com/SZUVIZ/StickyLinks/blob/main/NewOverview.png)
 
    we present __Sticky Links__, a novel visual encoding method that draws graph links with __stickiness__. Taking the metaphor of links with glues, sticky links represent connection strength using spiky shapes, ranging from two broken spikes for weak connections to connected lines for strong connections. 
 
