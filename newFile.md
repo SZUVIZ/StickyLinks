@@ -238,7 +238,7 @@ The `drawsticky` module provides a variety of functions for graph visualization.
 
 ### Core Functions🔑
 
-#### `readdata(data_path)`
+#### `read_data(data_path)`
 
 Reads and parses graph data.
 
@@ -286,7 +286,7 @@ Functions to draw different types of edges.
 
 Generates stickiness edges based on parameters.
 
-#### `get_sontrol_point(...)`
+#### `get_control_point(...)`
 
 Calculate four control points for stickiness edge.
 
