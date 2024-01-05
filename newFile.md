@@ -228,7 +228,9 @@ StickyLinks also supports CSV formatted graphs. The CSV files should adhere to t
 
 
 ```
+
 **CSV2 Example**:
+
 ```
 
 0,1,0.6
@@ -300,22 +302,31 @@ Generates stickiness edges based on parameters.
 Calculate four control points for stickiness edge.
 
 (Note: This is a condensed overview. Please refer to the source code in `drawsticky.py` for detailed comments and more functions.)
+
 ## Visualization Examples
+
 StickyLinks can be applied to various datasets to produce insightful visualizations. Below are examples using two different datasets: 'Miserables' and 'StarWars'. Each dataset is visualized using two different layouts to showcase the flexibility of StickyLinks.
 
 ### Miserables Dataset(JSON2 Example)
 
 The 'Miserables' dataset visualizations demonstrate how different layouts can impact the presentation of the same data.
+
 #### Original Layout
+
 ![Miserables Original Layout](link-to-original-layout-image)
+
 #### Spring Layout
+
 ![Miserables Spring Layout](link-to-spring-layout-image)
 
 ### StarWars Dataset(JSON1 Example)
+
 #### Original Layout
+
 ![StarWars Original Layout](link-to-starwars-original-layout-image)
 
 #### Spring Layout
+
 ![StarWars Spring Layout](link-to-starwars-spring-layout-image)
 Similar to the 'Miserables' dataset, the 'StarWars' dataset is shown here with both its original layout and a spring layout.
 
