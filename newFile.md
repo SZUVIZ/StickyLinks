@@ -334,8 +334,8 @@ Similar to the 'Miserables' dataset, the 'StarWars' dataset is shown here with b
 
 Developers interested in exploring these visualizations further can access the JSON data for these datasets:
 
-- [Miserables Dataset JSON](link-to-miserables-json)
-- [StarWars Dataset JSON](link-to-starwars-json)
+- [Miserables Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/miserables_layout.json)
+- [StarWars Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/starwars_layout_new.json)
 
 These examples illustrate the adaptability of StickyLinks in representing complex relationships in graphical data.
 
