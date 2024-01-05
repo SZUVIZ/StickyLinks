@@ -7,7 +7,7 @@ A Python implementation of paper 🔗 [Sticky Links: Encoding Quantitative Data 
 
 [check out an online demo](http://175.178.152.10:8890/)
 
-## Dependencies
+## Dependencies & Installation 
 
 StickyLinks requires the following Python packages:
 
@@ -25,11 +25,8 @@ Install these packages using the following command:
 pip install pandas networkx pycairo
 
 ```
-
-## Usage on Windows
-
-### 1. Install
-
+- **Install our library NodeStickyLinks**:
+  
 To install StickyLinks, open your command prompt and run:
 
 ```bash
@@ -38,18 +35,25 @@ pip install NodeStickyLinks
 
 ```
 
-### 2. Use StickyLinks in Python Projects
+## Usage on Windows
 
-If you're working on a Python project and want to use StickyLinks for graph visualization, you can import and use its functionalities as part of your code.
+There are two kinds of ways you might use our NodeStickyLinks library to draw graphs with sticky links. 
+One is to envoke the functions in your python source code. The other is to use our interactive UI interface to draw the graph. 
 
-1. **Import the Package**: First, import the `drawsticky` module in your Python script:
+### 1. Envoke StickyLinks in Python Source Codes
+
+If you're coding on a Python project and want to use StickyLinks for graph visualization, you can import and envode its functions as part of your code.
+
+1. **Import the Package**:
+   First, import the `drawsticky` module in your Python script:
 
    ```python
 
    from nodespikylink import drawsticky
 
    ```
-2. **Utilize Drawing Functions**: Use the function `drawsticky` to draw graphs and edges. Here's an example of how you can use this function:
+4. **Utilize Drawing Functions**:
+   Second, use the function `drawsticky` to draw graphs and edges. Here's an example of how you can use this function:
 
    ```python
 
@@ -68,26 +72,25 @@ If you're working on a Python project and want to use StickyLinks for graph visu
    Replace the function calls in the example with the actual functions you need from the `drawsticky` module, based on your graph drawing requirements.
 
 
-### Running StickyLinks Interactively
+### 2. Run StickyLinks Interactive User Interface
 
-For an interactive experience, where you can input parameters and see results without writing much code, use the run_drawsticky python script.
+We developed a mini UI for interactive usage of StickyLinks, where you can type in parameters and see results without writing any code. 
 
-#### 1. Run the Interactive Script
+1. **Run the Interactive Script**:
 
-Use Python to run the `run_drawsticky` module, which contains the interactive `run` function:
+Firstly, use Python to run the `run_drawsticky` module, which contains the interactive `run` function:
 
 ```python
 
   from nodespikylink import run_drawsticky
 
-
   run_drawsticky.run()
 
 ```
 
-#### 2. Follow the Prompts
+2. **Follow the Prompts**
 
-The script will prompt you for inputs such as the path to your data file and any other parameters required for drawing your graph. Enter these details as prompted to generate the graph visualization.
+The script will prompt you for inputs, including the path to your data file, and other parameters required for drawing your graph. Enter these details as prompted to generate the graph visualization.
 
 ##### Link Style
 
@@ -98,20 +101,20 @@ The script will prompt you for inputs such as the path to your data file and any
 ##### Canvas Dimensions
 
 - **Prompt**: Set the canvas size for your graph.
-- **Input**: Provide width and height in numerical values (e.g.,600, 800, 1200).
+- **Input**: Provide width and height in pixels (e.g., 600, 800, 1200).
 - **Default Setting**: By default, the canvas is set to a rectangular shape.
 
 ##### Node Radius
 
 - **Prompt**: Determine the radius size for nodes in your graph.
-- **Input**: Enter a numerical value, preferably between 2 and 6.
+- **Input**: Enter a numerical value in pixels, preferably between 2 and 6.
 - **Recommendation**: Based on our tests, a radius within this range should provide a balanced visual representation depending on your graph's scale.
 
 ##### Line Width
 
 - **Prompt**: Set the width for the lines (edges) in your graph.
-- **Input**: Enter a numerical value, ideally between 1 and 3.
-- **Suggestion**: This value should be chosen in relation to your graph's scale; our testing suggests that values in this range are generally effective.
+- **Input**: Enter a numerical value in pixels, ideally between 1 and 3.
+- **Suggestion**: This value should be chosen according to your graph's scale; our testing suggests that values in this range are generally effective.
 
 ##### Graph Layout Selection
 
@@ -126,16 +129,16 @@ The script will prompt you for inputs such as the path to your data file and any
   - `5` for `spectral_layout`.
 - **Note**: Each layout option offers a unique arrangement and perspective for your graph nodes.
 
-After completing these inputs, StickyLinks will process your data and create a graph visualization based on your specified preferences.
+After completing these inputs, StickyLinks will draw a graph visualization based on your specified preferences. 
 
-### Output Formats
+3. **Output Formats**
 
 After completing the input prompts and processing your data, StickyLinks will generate the graph visualization. The results will be available in two formats:
 
 - **SVG Format**: A scalable vector graphic file, ideal for high-quality, scalable visualizations and for further editing in vector graphic tools such as online editor boxy SVG.
 - **PNG Format**: A portable network graphics file.
 
-These files will be saved in the specified output directory or in a default location if not specified. You can use these files for presentations, reports, or further analysis.
+These files will be saved in the specified output directory or a default location if not specified. You can use these files for presentations, reports, or further analysis.
 
 ## 📊 Example of  Data
 
@@ -146,8 +149,9 @@ StickyLinks supports two graph data formats: JSON and CSV. Both formats are inte
 In the JSON format, your data must include 'nodes' and 'links' fields:
 
 - **Nodes**: Each node should have a 'name' and 'pos' (position) field. The 'pos' field must include 'x' and 'y' coordinates.
-- **Links**: Links between nodes. If your graph includes weights, each link should have a 'weight' key.
-
+- **Links**: Links between nodes. If your graph includes weights, each link can or not have a 'weight' key.
+If the 'weight' key is specified, the graph will be drawn with the specified weights for edges (the first example).
+If no 'weight' key is specified, the graph will be draw with constant weight for edges (the second exmaple). 
 
 **JSON1 Example**:
 
@@ -209,12 +213,12 @@ In the JSON format, your data must include 'nodes' and 'links' fields:
 
 StickyLinks also supports CSV formatted graphs. The CSV files should adhere to the following structure:
 
-- **Delimiter**: Use ',' as the delimiter.
+- **Delimiter**: Use ' ' as the delimiter.
 - **No Headers**: The CSV files should not contain headers.
-- **Columns**: The first column is the source node id, the second column is the target node id, and the last column is the edge weight.
+- **Columns**: The first column is the first node id, the second column is the second node id, and the last column is the edge weight.
 - **Encoding**: Files must be UTF-8 encoded.
 
-**CSV1 Example**:
+**CSV Example**:
 
 ```
 
@@ -223,20 +227,6 @@ StickyLinks also supports CSV formatted graphs. The CSV files should adhere to t
 0 2 0.6
 
 1 2 0.6
-
-
-```
-
-**CSV2 Example**:
-
-```
-
-0 1 0.3
-
-0 2 0.8
-
-1 2 0.5
-
 
 ```
 
@@ -304,7 +294,7 @@ Calculate four control points for stickiness edge.
 
 ## Citation
 
-If you find our work useful for your research, please consider citing the following papers :)
+If you find our work useful for your research, please consider citing our paper :)
 
 ```bibtex
 
