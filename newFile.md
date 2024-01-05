@@ -2,7 +2,7 @@
 
 A Python implementation of paper 🔗 [Sticky Links: Encoding Quantitative Data of Graph Edges](https://deardeer.github.io/)
 
-![image](https://github.com/maymayuo/Spiky-Links/blob/main/NewOverview.png)
+![image](https://github.com/SZUVIZ/StickyLinks/blob/main/NewOverview.png)
     __Sticky Links__ is introduced as a novel visual encoding method that draws graph links with __stickiness__, as shown in the right of the above figure. The conventional graph links use their thickness to encode quantitative attributes (shown on the left). Taking the metaphor of links with glues, sticky links represent numerical link attribute using spiky shapes, ranging from two broken spikes for weak connections to connected lines for strong connections.
 
 [check out an online demo](http://175.178.152.10:8890/)
