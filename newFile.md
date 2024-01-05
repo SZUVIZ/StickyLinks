@@ -1,15 +1,11 @@
-# StickyLinks: A Novel Method for Visual Encoding of Graph Links.
+# StickyLinks: A Novel Visual Encoding of Edges in Node-link Diagram
 
+A Python implementation of paper 🔗 [Sticky Links: Encoding Quantitative Data of Graph Edges](https://deardeer.github.io/) 
 
+![image](https://github.com/maymayuo/Spiky-Links/blob/main/NewOverview.png)
+    __Sticky Links__ is introduced as a novel visual encoding method that draws graph links with __stickiness__, as shown in the right of the above figure. The conventional graph links use their thickness to encode quantitative attributes (shown on the left). Taking the metaphor of links with glues, sticky links represent numerical link attribute using spiky shapes, ranging from two broken spikes for weak connections to connected lines for strong connections. 
 
-StickyLinks introduces an **innovative approach** to visualize and encode quantitative data in graph links. Building upon the principles outlined in our research paper ["Sticky Links: Encoding Quantitative Data of Graph Links"](link-to-your-paper), this method **enhances the representation** of connections in graphical data, making it more **intuitive** and **informative** for users.
-
-
-## 🔗 [Paper](link-to-your-paper)|[Project](https://github.com/deardeer/Node-SpikeLink)|[Live Demo](http://175.178.152.10:8890/)
-
-![image](https://github.com/SZUVIZ/StickyLinks/blob/main/NewOverview.png)
-
-   we present __Sticky Links__, a novel visual encoding method that draws graph links with __stickiness__. Taking the metaphor of links with glues, sticky links represent connection strength using spiky shapes, ranging from two broken spikes for weak connections to connected lines for strong connections. 
+[check out an online demo](http://175.178.152.10:8890/)
 
 ## Dependencies
 
@@ -19,7 +15,7 @@ StickyLinks requires the following Python packages:
 - **Third-Party Libraries**:
 
   - `pandas`: For data manipulation and analysis.
-  - `networkx`: To create and work with common graph layout algorithm.
+  - `networkx`: To create and work with a common graph layout algorithm.
   - `pycairo`: A set of Python bindings for the Cairo graphics library.
 
 Install these packages using the following command:
@@ -30,9 +26,9 @@ pip install pandas networkx pycairo
 
 ```
 
-## 💻Usage on Windows
+## Usage on Windows
 
-### Installation
+### 1. Install
 
 To install StickyLinks, open your command prompt and run:
 
@@ -42,11 +38,7 @@ pip install NodeStickyLinks
 
 ```
 
-### Run StickyLinks
-
-After installing StickyLinks via pip, you can easily integrate its graph drawing capabilities into your Python projects or run it interactively.
-
-### Using StickyLinks in  Python Projects
+### 2. Use StickyLinks in Python Projects
 
 If you're working on a Python project and want to use StickyLinks for graph visualization, you can import and use its functionalities as part of your code.
 
@@ -57,15 +49,15 @@ If you're working on a Python project and want to use StickyLinks for graph visu
    from nodespikylink import drawsticky
 
    ```
-2. **Utilize Drawing Functions**: Use the various functions provided by `drawsticky` to draw graphs and edges. Here's an example of how you might use some of these functions:
+2. **Utilize Drawing Functions**: Use the function `drawsticky` to draw graphs and edges. Here's an example of how you can use this function:
 
    ```python
 
    # Example usage
 
-   data_path ="path/to/your/datafile.json"  # Replace with your data file path
+   data_path ="path/to/your/datafile.json"  # Replace with your graph data file path
 
-   graph_data = drawsticky.readdata(data_path)
+   graph_data = drawsticky.readdata(data_path) 
 
    node_positions = drawsticky.extract_node_positions(graph_data)
 
@@ -75,9 +67,10 @@ If you're working on a Python project and want to use StickyLinks for graph visu
 
    Replace the function calls in the example with the actual functions you need from the `drawsticky` module, based on your graph drawing requirements.
 
+
 ### Running StickyLinks Interactively
 
-For an interactive experience, where you can input parameters and see results without writing much code, use the run_drawsticky script.
+For an interactive experience, where you can input parameters and see results without writing much code, use the run_drawsticky python script.
 
 #### 1. Run the Interactive Script
 
@@ -144,17 +137,16 @@ After completing the input prompts and processing your data, StickyLinks will ge
 
 These files will be saved in the specified output directory or in a default location if not specified. You can use these files for presentations, reports, or further analysis.
 
-## 📊Example of  Data
+## 📊 Example of  Data
 
 StickyLinks supports two graph data formats: JSON and CSV. Both formats are intended for undirected graphs.
 
-### 1️⃣JSON Graph Format
+### 1️⃣ JSON Graph Format
 
 In the JSON format, your data must include 'nodes' and 'links' fields:
 
 - **Nodes**: Each node should have a 'name' and 'pos' (position) field. The 'pos' field must include 'x' and 'y' coordinates.
 - **Links**: Links between nodes. If your graph includes weights, each link should have a 'weight' key.
-
 
 
 **JSON1 Example**:
@@ -221,7 +213,6 @@ StickyLinks also supports CSV formatted graphs. The CSV files should adhere to t
 - **No Headers**: The CSV files should not contain headers.
 - **Columns**: The first column is the source node id, the second column is the target node id, and the last column is the edge weight.
 - **Encoding**: Files must be UTF-8 encoded.
-
 
 **CSV1 Example**:
 
@@ -311,7 +302,7 @@ Calculate four control points for stickiness edge.
 
 (Note: This is a condensed overview. Please refer to the source code in `drawsticky.py` for detailed comments and more functions.)
 
-## 📔Citation
+## Citation
 
 If you find our work useful for your research, please consider citing the following papers :)
 
