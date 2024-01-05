@@ -313,21 +313,21 @@ The 'Miserables' dataset visualizations demonstrate how different layouts can im
 
 #### Original Layout
 
-![Miserables Original Layout](link-to-original-layout-image)
+![Miserables Original Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/mis_700_5_1.8_0.4_nolayout%402x.png)
 
 #### Spring Layout
 
-![Miserables Spring Layout](link-to-spring-layout-image)
+![Miserables Spring Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/mis_700_5_1.8_0.4_spring%402x.png)
 
 ### StarWars Dataset(JSON1 Example)
 
 #### Original Layout
 
-![StarWars Original Layout](link-to-starwars-original-layout-image)
+![StarWars Original Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/starwars_700_5_1.8_nolayout%402x.png)
 
 #### Spring Layout
 
-![StarWars Spring Layout](link-to-starwars-spring-layout-image)
+![StarWars Spring Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/starwar_700_5_1.8_0.4_spring%402x.png)
 Similar to the 'Miserables' dataset, the 'StarWars' dataset is shown here with both its original layout and a spring layout.
 
 ### Dataset Availability
