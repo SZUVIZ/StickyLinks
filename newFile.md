@@ -1,13 +1,13 @@
 # StickyLinks: A Novel Visual Encoding of Edges in Node-link Diagram
 
-A Python implementation of paper 🔗 [Sticky Links: Encoding Quantitative Data of Graph Edges](https://deardeer.github.io/) 
+A Python implementation of paper 🔗 [Sticky Links: Encoding Quantitative Data of Graph Edges](https://deardeer.github.io/)
 
 ![image](https://github.com/maymayuo/Spiky-Links/blob/main/NewOverview.png)
-    __Sticky Links__ is introduced as a novel visual encoding method that draws graph links with __stickiness__, as shown in the right of the above figure. The conventional graph links use their thickness to encode quantitative attributes (shown on the left). Taking the metaphor of links with glues, sticky links represent numerical link attribute using spiky shapes, ranging from two broken spikes for weak connections to connected lines for strong connections. 
+    __Sticky Links__ is introduced as a novel visual encoding method that draws graph links with __stickiness__, as shown in the right of the above figure. The conventional graph links use their thickness to encode quantitative attributes (shown on the left). Taking the metaphor of links with glues, sticky links represent numerical link attribute using spiky shapes, ranging from two broken spikes for weak connections to connected lines for strong connections.
 
 [check out an online demo](http://175.178.152.10:8890/)
 
-## Dependencies & Installation 
+## Dependencies & Installation
 
 StickyLinks requires the following Python packages:
 
@@ -25,8 +25,9 @@ Install these packages using the following command:
 pip install pandas networkx pycairo
 
 ```
+
 - **Install our library NodeStickyLinks**:
-  
+
 To install StickyLinks, open your command prompt and run:
 
 ```bash
@@ -37,8 +38,8 @@ pip install NodeStickyLinks
 
 ## Usage on Windows
 
-There are two kinds of ways you might use our NodeStickyLinks library to draw graphs with sticky links. 
-One is to envoke the functions in your python source code. The other is to use our interactive UI interface to draw the graph. 
+There are two kinds of ways you might use our NodeStickyLinks library to draw graphs with sticky links.
+One is to envoke the functions in your python source code. The other is to use our interactive UI interface to draw the graph.
 
 ### 1. Envoke StickyLinks in Python Source Codes
 
@@ -49,10 +50,10 @@ If you're coding on a Python project and want to use StickyLinks for graph visua
 
    ```python
 
-   from nodespikylink import drawsticky
+   from NodeStickyLinks import drawsticky
 
    ```
-4. **Utilize Drawing Functions**:
+2. **Utilize Drawing Functions**:
    Second, use the function `drawsticky` to draw graphs and edges. Here's an example of how you can use this function:
 
    ```python
@@ -71,10 +72,9 @@ If you're coding on a Python project and want to use StickyLinks for graph visua
 
    Replace the function calls in the example with the actual functions you need from the `drawsticky` module, based on your graph drawing requirements.
 
-
 ### 2. Run StickyLinks Interactive User Interface
 
-We developed a mini UI for interactive usage of StickyLinks, where you can type in parameters and see results without writing any code. 
+We developed a mini UI for interactive usage of StickyLinks, where you can type in parameters and see results without writing any code.
 
 1. **Run the Interactive Script**:
 
@@ -129,7 +129,7 @@ The script will prompt you for inputs, including the path to your data file, and
   - `5` for `spectral_layout`.
 - **Note**: Each layout option offers a unique arrangement and perspective for your graph nodes.
 
-After completing these inputs, StickyLinks will draw a graph visualization based on your specified preferences. 
+After completing these inputs, StickyLinks will draw a graph visualization based on your specified preferences.
 
 3. **Output Formats**
 
@@ -142,7 +142,7 @@ These files will be saved in the specified output directory or a default locatio
 
 ## 📊 Example of  Data
 
-StickyLinks supports two graph data formats: JSON and CSV. Both formats are intended for undirected graphs.
+StickyLinks supports two graph data formats: JSON and CSV. Both formats are intended for undirected graphs. **Most importantly, the values under the 'weight' field must range between 0 and 1.**
 
 ### 1️⃣ JSON Graph Format
 
@@ -150,8 +150,8 @@ In the JSON format, your data must include 'nodes' and 'links' fields:
 
 - **Nodes**: Each node should have a 'name' and 'pos' (position) field. The 'pos' field must include 'x' and 'y' coordinates.
 - **Links**: Links between nodes. If your graph includes weights, each link can or not have a 'weight' key.
-If the 'weight' key is specified, the graph will be drawn with the specified weights for edges (the first example).
-If no 'weight' key is specified, the graph will be draw with constant weight for edges (the second exmaple). 
+  If the 'weight' key is specified, the graph will be drawn with the specified weights for edges (the first example).
+  If no 'weight' key is specified, the graph will be draw with constant weight for edges (the second exmaple).
 
 **JSON1 Example**:
 
@@ -213,20 +213,29 @@ If no 'weight' key is specified, the graph will be draw with constant weight for
 
 StickyLinks also supports CSV formatted graphs. The CSV files should adhere to the following structure:
 
-- **Delimiter**: Use ' ' as the delimiter.
+- **Delimiter**: we now support comma delimiter.
 - **No Headers**: The CSV files should not contain headers.
 - **Columns**: The first column is the first node id, the second column is the second node id, and the last column is the edge weight.
 - **Encoding**: Files must be UTF-8 encoded.
 
-**CSV Example**:
+**CSV1 Example**:
 
 ```
 
-0 1 0.6
+0,1,0.6
+0,2,0.6
+0,3,0.6
 
-0 2 0.6
 
-1 2 0.6
+```
+**CSV2 Example**:
+```
+
+0,1,0.6
+0,2,0.4
+0,3,1
+
+
 
 ```
 
@@ -291,6 +300,33 @@ Generates stickiness edges based on parameters.
 Calculate four control points for stickiness edge.
 
 (Note: This is a condensed overview. Please refer to the source code in `drawsticky.py` for detailed comments and more functions.)
+## Visualization Examples
+StickyLinks can be applied to various datasets to produce insightful visualizations. Below are examples using two different datasets: 'Miserables' and 'StarWars'. Each dataset is visualized using two different layouts to showcase the flexibility of StickyLinks.
+
+### Miserables Dataset(JSON2 Example)
+
+The 'Miserables' dataset visualizations demonstrate how different layouts can impact the presentation of the same data.
+#### Original Layout
+![Miserables Original Layout](link-to-original-layout-image)
+#### Spring Layout
+![Miserables Spring Layout](link-to-spring-layout-image)
+
+### StarWars Dataset(JSON1 Example)
+#### Original Layout
+![StarWars Original Layout](link-to-starwars-original-layout-image)
+
+#### Spring Layout
+![StarWars Spring Layout](link-to-starwars-spring-layout-image)
+Similar to the 'Miserables' dataset, the 'StarWars' dataset is shown here with both its original layout and a spring layout.
+
+### Dataset Availability
+
+Developers interested in exploring these visualizations further can access the JSON data for these datasets:
+
+- [Miserables Dataset JSON](link-to-miserables-json)
+- [StarWars Dataset JSON](link-to-starwars-json)
+
+These examples illustrate the adaptability of StickyLinks in representing complex relationships in graphical data.
 
 ## Citation
 
