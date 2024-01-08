@@ -238,39 +238,14 @@ Ensure that your data files conform to these formats for optimal compatibility w
 
 The `drawsticky` module provides a variety of functions for graph visualization. Below are descriptions of key functions:
 
-### Core Functions🔑
-
-#### `read_data(data_path)`
-
-Reads and parses graph data.
-
-- `data_path` (string): Path to the data file.
-
 #### `draw_graph(context, nodes, edges, params)`
 
-Renders the entire graph.
+Renders the entire graph with customizable edge styles, node sizes, and canvas dimensions
 
 - `context`: Drawing context.
 - `nodes`: Node data.
 - `edges`: Edge data.
 - `params`: Graph drawing parameters.
-
-### Layout and Style Functions
-
-#### `apply_layout_to_json(json_data, layout_type)`
-
-Applies a specified layout to JSON graph data.
-
-- `json_data`: The graph data in JSON format.
-- `layout_type`: Type of layout to apply.
-
-#### `set_line_width(width)`
-
-Sets the line width for drawing.
-
-- `width`: Width of the lines.
-
-### Node and Edge Drawing Functions
 
 #### `draw_nodes(context, nodes, radius)`
 
@@ -280,7 +255,7 @@ Draws graph nodes.
 - `nodes`: Node data.
 - `radius`: Radius of nodes.
 
-#### `draw_stickiness_edge(...)`, `draw_thickness_edge(...)`
+#### `draw_stickiness_edge(...)` ， `draw_thickness_edge(...)`
 
 Functions to draw different types of edges.
 
@@ -294,6 +269,15 @@ Calculate four control points for stickiness edge.
 
 (Note: This is a condensed overview. Please refer to the source code in `drawsticky.py` for detailed comments and more functions.)
 
+## Example Visualization
+
+The visualization presented below showcases the stickiness style applied to the Miserable and Star War datasets.
+
+![image](https://github.com/maymayuo/StickyLinks/blob/main/visualizationExample/Pic/Visualization%20Example.png)
+
+To explore this dataset further, you can access the Miserables dataset here:
+[Miserables Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/miserables_layout.json)
+[Star War Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/starwars_layout_new.json)
 
 ## Citation
 
