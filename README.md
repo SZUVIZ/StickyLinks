@@ -273,7 +273,7 @@ Calculate four control points for stickiness edge.
 
 The visualization presented below showcases the stickiness style applied to the Miserable and Star War datasets.
 
-![image](https://github.com/SZUVIZ/StickyLinks/blob/main/NewOverview.png)
+![image](https://github.com/maymayuo/StickyLinks/blob/main/visualizationExample/Pic/Visualization%20Example.png)
 
 To explore this dataset further, you can access the Miserables dataset here:
 [Miserables Dataset JSON](link-to-miserables-dataset)
