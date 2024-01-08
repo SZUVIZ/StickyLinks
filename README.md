@@ -211,7 +211,7 @@ In the JSON format, your data must include 'nodes' and 'links' fields:
 
 ### 2️⃣ CSV Graph Format
 
-StickyLinks also supports CSV formatted graphs. The CSV files should adhere to the following structure:
+StickyLinks also supports CSV-formatted graphs. The CSV files should adhere to the following structure:
 
 - **Delimiter**: we now support comma delimiter.
 - **No Headers**: The CSV files should not contain headers.
@@ -221,24 +221,9 @@ StickyLinks also supports CSV formatted graphs. The CSV files should adhere to t
 **CSV1 Example**:
 
 ```
-
 0,1,0.6
 0,2,0.6
 0,3,0.6
-
-
-```
-
-**CSV2 Example**:
-
-```
-
-0,1,0.6
-0,2,0.4
-0,3,1
-
-
-
 ```
 
 Ensure that your data files conform to these formats for optimal compatibility with StickyLinks.
