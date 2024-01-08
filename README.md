@@ -102,19 +102,19 @@ The script will prompt you for inputs, including the path to your data file, and
 
 - **Prompt**: Set the canvas size for your graph.
 - **Input**: Provide width and height in pixels (e.g., 600, 800, 1200).
-- **Default Setting**: By default, the canvas is set to a rectangular shape.
+- **Note**: By default, the canvas is set to a rectangular shape.
 
 ##### Node Radius
 
 - **Prompt**: Determine the radius size for nodes in your graph.
 - **Input**: Enter a numerical value in pixels, preferably between 2 and 6.
-- **Recommendation**: Based on our tests, a radius within this range should provide a balanced visual representation depending on your graph's scale.
+- **Note**: Based on our tests, a radius within this range should provide a balanced visual representation depending on your graph's scale.
 
 ##### Line Width
 
 - **Prompt**: Set the width for the lines (edges) in your graph.
 - **Input**: Enter a numerical value in pixels, ideally between 1 and 3.
-- **Suggestion**: This value should be chosen according to your graph's scale; our testing suggests that values in this range are generally effective.
+- **Note**: This value should be chosen according to your graph's scale; our testing suggests that values in this range are generally effective.
 
 ##### Graph Layout Selection
 
