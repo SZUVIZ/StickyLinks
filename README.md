@@ -294,41 +294,11 @@ Calculate four control points for stickiness edge.
 
 (Note: This is a condensed overview. Please refer to the source code in `drawsticky.py` for detailed comments and more functions.)
 
-## Visualization Examples
+## Example
 
-StickyLinks can be applied to various datasets to produce insightful visualizations. Below are examples using two different datasets: 'Miserables' and 'StarWars'. Each dataset is visualized using two different layouts to showcase the flexibility of StickyLinks.
-
-### Miserables Dataset(JSON2 Example)
-
-The 'Miserables' dataset visualizations demonstrate how different layouts can impact the presentation of the same data.
-
-#### Original Layout
-
-![Miserables Original Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/mis_700_5_1.8_0.4_nolayout%402x.png)
-
-#### Spring Layout
-
-![Miserables Spring Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/mis_700_5_1.8_0.4_spring%402x.png)
-
-### StarWars Dataset(JSON1 Example)
-
-#### Original Layout
+StickyLinks can be applied to various datasets to produce insightful visualizations. Below is [StarWars Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/starwars_layout_new.json)
 
 ![StarWars Original Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/starwars_700_5_1.8_nolayout%402x.png)
-
-#### Spring Layout
-
-![StarWars Spring Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/starwar_700_5_1.8_0.4_spring%402x.png)
-Similar to the 'Miserables' dataset, the 'StarWars' dataset is shown here with both its original layout and a spring layout.
-
-### Dataset Availability
-
-Developers interested in exploring these visualizations further can access the JSON data for these datasets:
-
-- [Miserables Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/miserables_layout.json)
-- [StarWars Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/starwars_layout_new.json)
-
-These examples illustrate the adaptability of StickyLinks in representing complex relationships in graphical data.
 
 ## Citation
 
@@ -336,23 +306,23 @@ If you find our work useful for your research, please consider citing our paper 
 
 ```bibtex
 
-@article{Winglets19,
+@article{Stickylinks2023_lu,
 
-title = {Winglets: Visualizing Association with Uncertainty in Multi-class Scatterplots},
+title = {Sticky Links: Encoding Quantitative Data of Graph Edges},
 
-author = {Min Lu, Shuaiqi Wang, Joel Lanir, Noa Fish, Yang Yue, Daniel Cohen-Or, Hui Huang},
+author = {Min Lu, Xiangfang Zeng, Joel Lanir, Xiaoqin Sun, Guozheng Li, Daniel Cohen-Or, and Hui Huang},
 
-journal = {IEEE Transactions on Visualization and Computer Graphics (Proceedings of InfoVis 2019)},
+journal = {IEEE Transactions on Visualization and Computer Graphics (to appear)},
 
-volume = {26},
+volume = {},
 
-number = {1}, 
-
-
-pages = {770--779}, 
+number = {}, 
 
 
-year = {2020},
+pages = {--}, 
+
+
+year = {2023},
 
 }
 
