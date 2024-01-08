@@ -62,7 +62,7 @@ If you're coding on a Python project and want to use StickyLinks for graph visua
    #Define parameters for the graph drawing()
    edge_style = 'stickiness' # Choose 'thickiness' or 'stickiness'
    file_path =  'path/to/your/datafile.json'  # Path to the JSON or CSV data file
-   node_radius = 5.0 # Radius of the nodes
+   nodes_radius = 5.0 # Radius of the nodes
    edge_width = 2 # Width of the canvas for the drawing
    canvas_width = 700 # Width of the canvas for the drawing
    canvas_height = 700 # Height of the canvas for the drawing
