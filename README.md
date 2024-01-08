@@ -59,14 +59,20 @@ If you're coding on a Python project and want to use StickyLinks for graph visua
    ```python
 
    # Example usage
+   #Define parameters for the graph drawing()
+   edge_style = 'stickiness' # Choose 'thickiness' or 'stickiness'
+   file_path =  'path/to/your/datafile.json'  # Path to the JSON or CSV data file
+   node_radius = 5.0 # Radius of the nodes
+   edge_width = 2 # Width of the canvas for the drawing
+   canvas_width = 700 # Width of the canvas for the drawing
+   canvas_height = 700 # Height of the canvas for the drawing
 
-   data_path ="path/to/your/datafile.json"  # Replace with your graph data file path
+   # Draw the graph
+   draw_graph(edge_style, file_path, nodes_radius, edge_width, canvas_width, canvas_height)
 
-   graph_data = drawsticky.readdata(data_path) 
+   # After running the above function, two files will be created:
+   # 'graph.svg' and 'graph.png', containing the visual representation of the graph.
 
-   node_positions = drawsticky.extract_node_positions(graph_data)
-
-   # ... continue with other function calls as needed
 
    ```
 
