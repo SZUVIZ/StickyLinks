@@ -60,6 +60,7 @@ If you're coding on a Python project and want to use StickyLinks for graph visua
 
    # Example usage
    #Define parameters for the graph drawing()
+   from NodeStickyLinks import drawsticky
    edge_style = 'stickiness' # Choose 'thickiness' or 'stickiness'
    file_path =  'path/to/your/datafile.json'  # Path to the JSON or CSV data file
    nodes_radius = 5.0 # Radius of the nodes
