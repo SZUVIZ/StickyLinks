@@ -88,7 +88,7 @@ Firstly, use Python to run the `run_drawsticky` module, which contains the inter
 
 ```python
 
-  from nodespikylink import run_drawsticky
+  from NodeStickyLinks import run_drawsticky
 
   run_drawsticky.run()
 
