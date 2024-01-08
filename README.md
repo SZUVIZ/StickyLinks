@@ -294,11 +294,6 @@ Calculate four control points for stickiness edge.
 
 (Note: This is a condensed overview. Please refer to the source code in `drawsticky.py` for detailed comments and more functions.)
 
-## Example
-
-StickyLinks can be applied to various datasets to produce insightful visualizations. Below is [StarWars Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/starwars_layout_new.json)
-
-![StarWars Original Layout](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/starwars_700_5_1.8_nolayout%402x.png)
 
 ## Citation
 
