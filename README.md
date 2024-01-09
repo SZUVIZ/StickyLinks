@@ -239,14 +239,15 @@ Ensure that your data files conform to these formats for optimal compatibility w
 
 The `drawsticky` module provides a variety of functions for graph visualization. Below are descriptions of key functions:
 
-#### `draw_graph(context, nodes, edges, params)`
+#### `draw_graph(edge_style,file_path,nodes_radius,edge_width,canvas_width,canvas_height)`
 
 Renders the entire graph with customizable edge styles, node sizes, and canvas dimensions
 
-- `context`: Drawing context.
-- `nodes`: Node data.
-- `edges`: Edge data.
-- `params`: Graph drawing parameters.
+- `edge_style`(str): Style of the edges ('thickiness' or 'stickiness')
+- `file_path` (str): Path to the data file.
+- `nodes_radius`(int): Expected radius of nodes.
+- `canvas_width` (int): Width of the canvas.
+-  `canvas_height`(int): Height of the canvas.
 
 #### `draw_nodes(context, nodes, radius)`
 
