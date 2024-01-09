@@ -237,64 +237,64 @@ Ensure that your data files conform to these formats for optimal compatibility w
 
 ## API Reference📚
 
+
 The `drawsticky` module provides a variety of functions for graph visualization. Below are descriptions of key functions:
 
-#### `draw_graph(edge_style,file_path,nodes_radius,edge_width,canvas_width,canvas_height)`
+#### `draw_graph(edge_style, file_path, nodes_radius, edge_width, canvas_width, canvas_height)`
 
-Renders the entire graph with customizable edge styles, node sizes, and canvas dimensions
+Renders the entire graph with customizable edge styles, node sizes, and canvas dimensions.
 
-- `edge_style`(str): Style of the edges ('thickiness' or 'stickiness')
+- `edge_style` (str): Style of the edges ('thickness' or 'stickiness').
 - `file_path` (str): Path to the data file.
-- `nodes_radius`(int): Expected radius of nodes.
+- `nodes_radius` (int): Expected radius of nodes.
 - `canvas_width` (int): Width of the canvas.
--  `canvas_height`(int): Height of the canvas.
+- `canvas_height` (int): Height of the canvas.
 
 #### `draw_nodes(context, nodes, radius)`
 
 - `context`: Drawing context.
-- `nodes`(list): Node data in the form of list consisting of dictionary {"x":x1, "y":y1}
-- `radius(int)`: Radius of nodes.
-#### `draw_stickiness_edge(stickiness, pab, thirds, line_width, context)` 
+- `nodes` (list): Node data in the form of a list consisting of dictionaries {"x": x1, "y": y1}.
+- `radius` (int): Radius of nodes.
+
+#### `draw_stickiness_edge(stickiness, pab, thirds, line_width, context)`
 
 Draw stickiness curves on the given Cairo context.
 
-* stickiness (float) : weight value of edge.
-* pab (dict): Dictionary containing anchor for point for drawing.
-* thirds (dict): Dictionary containing third positions and handles for drawing.
-* context (cairo.Context): Cairo canvas for drawing.
-  
-#### `draw_thickness_edge(source_pos_new,target_pos_new,weight,edge_width, context)`
+- `stickiness` (float): Weight value of edge.
+- `pab` (dict): Dictionary containing anchor point for drawing.
+- `thirds` (dict): Dictionary containing third positions and handles for drawing.
+- `context` (cairo.Context): Cairo canvas for drawing.
+
+#### `draw_thickness_edge(source_pos_new, target_pos_new, weight, edge_width, context)`
 
 Draw edges with varying thickness based on the provided weight.
 
-* source_pos_new (list): List of dictionaries containing source node positions.
-* target_pos_new (list): List of dictionaries containing target node positions.
-* weight (float): Weight of the edges, influencing the thickness of edge.
-* context (cairo.Context): Cairo context(canvas) for drawing.
+- `source_pos_new` (list): List of dictionaries containing source node positions.
+- `target_pos_new` (list): List of dictionaries containing target node positions.
+- `weight` (float): Weight of the edges, influencing the thickness of the edge.
+- `context` (cairo.Context): Cairo context (canvas) for drawing.
 
-#### `gen_sticky(drawStyle,ss,source_pos_new,target_pos_new,SOURCE_RADIUS,TARGET_RADIUS)`
+#### `gen_sticky(drawStyle, ss, source_pos_new, target_pos_new, SOURCE_RADIUS, TARGET_RADIUS)`
 
 Generate sticky link visualization parameters based on input parameters.
 
-* drawStyle (str): The drawing style, e.g., 'stickiness'.
-* ss (float): weight value.
-* source_pos_new (dict): Dictionary containing the position of the source node.
-* target_pos_new (dict): Dictionary containing the position of the target node.
-* SOURCE_RADIUS (float): Radius of the source node.
-* TARGET_RADIUS (float): Radius of the target node.
+- `drawStyle` (str): The drawing style, e.g., 'stickiness'.
+- `ss` (float): Weight value.
+- `source_pos_new` (dict): Dictionary containing the position of the source node.
+- `target_pos_new` (dict): Dictionary containing the position of the target node.
+- `SOURCE_RADIUS` (float): Radius of the source node.
+- `TARGET_RADIUS` (float): Radius of the target node.
 
-
-#### `get_control_point(ball1_pos,ball2_pos,stickiness,SOURCE_RADIUS,TARGET_RADIUS,angle)`
+#### `get_control_point(ball1_pos, ball2_pos, stickiness, SOURCE_RADIUS, TARGET_RADIUS, angle)`
 
 This function computes anchor points for a sticky link visualization, taking into account various factors such as stickiness, node radius, and interpolation.
 
-* ball1_pos (dict): Dictionary containing the position of the source node.
-* ball2_pos (dict): Dictionary containing the position of the target node.
-* stickiness (float): Stickiness factor influencing the angle difference.
-* SOURCE_RADIUS (float): Radius of the source node.
-* TARGET_RADIUS (float): Radius of the target node.
-* angle： radian angle between source and target nodes
-
+- `ball1_pos` (dict): Dictionary containing the position of the source node.
+- `ball2_pos` (dict): Dictionary containing the position of the target node.
+- `stickiness` (float): Stickiness factor influencing the angle difference.
+- `SOURCE_RADIUS` (float): Radius of the source node.
+- `TARGET_RADIUS` (float): Radius of the target node.
+- `angle`: Radian angle between source and target nodes.
 
 (Note: This is a condensed overview. Please refer to the source code in `drawsticky.py` for detailed comments and more functions.)
 
@@ -303,7 +303,6 @@ This function computes anchor points for a sticky link visualization, taking int
 The visualization presented below showcases the stickiness style applied to the [Miserables Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/miserables_layout.json) and [Star War Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/starwars_layout_new.json).
 
 ![image](https://github.com/maymayuo/StickyLinks/blob/main/visualizationExample/Pic/Visualization%20Example.png)
-
 
 ## Citation
 
