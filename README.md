@@ -270,7 +270,7 @@ Calculate four control points for stickiness edge.
 
 (Note: This is a condensed overview. Please refer to the source code in `drawsticky.py` for detailed comments and more functions.)
 
-## Example Visualization
+## Examples
 
 The visualization presented below showcases the stickiness style applied to the [Miserables Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/miserables_layout.json) and [Star War Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/starwars_layout_new.json).
 
