@@ -282,9 +282,7 @@ Generate sticky link visualization parameters based on input parameters.
 * target_pos_new (dict): Dictionary containing the position of the target node.
 * SOURCE_RADIUS (float): Radius of the source node.
 * TARGET_RADIUS (float): Radius of the target node.
-#### `gen_sticky(...)`
 
-Generates stickiness edges based on parameters.
 
 #### `get_control_point(ball1_pos,ball2_pos,stickiness,SOURCE_RADIUS,TARGET_RADIUS,angle)`
 
