@@ -302,7 +302,7 @@ This function computes anchor points for a sticky link visualization, taking int
 
 The visualization presented below showcases the stickiness style applied to the [Miserables Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/miserables_layout.json) and [Star War Dataset JSON](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/datasets/starwars_layout_new.json).
 
-![image](https://github.com/maymayuo/StickyLinks/blob/main/visualizationExample/Pic/Visualization%20Example.png)
+![image](https://github.com/SZUVIZ/StickyLinks/blob/main/visualizationExample/Pic/Visualization%20Example.png)
 
 ## Citation
 
